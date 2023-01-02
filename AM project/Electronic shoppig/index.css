@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Caramel&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: thistle;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: #cdb4db;
+    cursor: pointer;
+    box-shadow: 0px 0px 10px #cdb4db;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 700;
+    border-radius: 5px;
+    font-family: 'Sevillana', cursive;
+    padding: 5px 10px;
+    margin-left: 5rem;
+    background-color: #ffc8dd;
+    align-items: center;
+}
+
+.items ul {
+    display: flex;
+}
+
+.items ul li {
+    padding: 1rem;
+    margin-right: 3rem;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.items ul li i {
+    padding-right: 5px;
+}
+
+.items ul li a {
+    color: black;
+}
+
+.items ul li:hover {
+    background-color: #ffc8dd;
+    border-radius: 5px;
+}
