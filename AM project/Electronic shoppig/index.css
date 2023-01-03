@@ -100,7 +100,7 @@ li {
 .slides {
     display: flex;
     position: relative;
-    width: 500%;
+    width: 200%;
     animation: 20s slides infinite;
     margin: 0;
     left: 0;
@@ -134,4 +134,9 @@ li {
     100% {
         left: -300%;
     }
+}
+
+.card {
+    /* display: flex; */
+    align-items: center;
 }
