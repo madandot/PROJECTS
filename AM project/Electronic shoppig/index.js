@@ -1,33 +1,23 @@
-// image
-document.querySelectorAll(".carousel").forEach((carousel) => {
-  const items = carousel.querySelectorAll(".carousel-item");
-  const buttonsHtml = Array.from(items, () => {
-    return `<span class="carousel-button"></span>`;
-  });
+function validate() {
+  var username = document.getElementById("name");
+  var mail = document.getElementById("email");
+  var mobile = document.getElementById("phone");
+  var text = document.getElementById("message");
+  if (
+    username === "madan ,abhireddy" &&
+    mail === "reddymadan0512@gmail.com,abhi9391@gamil.com" &&
+    mobile === "960618314,9391244973" &&
+    text === "return the product"
+  ) {
+    alert("send message");
+    return false;
+  } else {
+    alert("send error");
+  }
+}
 
-  carousel.insertAdjacentHTML(
-    "beforeend",
-    `
-		<div class="carousel-nav">
-			${buttonsHtml.join("")}
-		</div>
-	`
-  );
-
-  const buttons = carousel.querySelectorAll(".carousel-button");
-
-  buttons.forEach((button, i) => {
-    button.addEventListener("click", () => {
-      // un-select all the items
-      items.forEach((item) => item.classList.remove("carousel-selected"));
-      buttons.forEach((button) => button.classList.remove("carousel-button-selected"));
-
-      items[i].classList.add("carousel-selected");
-      button.classList.add("carousel-button-selected");
-    });
-  });
-
-  // Select the first item on page load
-  items[0].classList.add("carousel-selected");
-  buttons[0].classList.add("carousel-button-selected");
+let btnclear = document.querySelectorAll("message");
+let inputs = document.querySelectorAll("phone");
+btnclear.addEventListener("click", () => {
+  inputs.forEach((phone) => (phone.value = ""));
 });

@@ -9,6 +9,7 @@ function validate() {
     alert("login failed");
   }
 }
+
 function toggle() {
   var x = document.getElementById("password");
   var y = document.getElementById("eyes");
