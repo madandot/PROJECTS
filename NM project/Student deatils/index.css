@@ -35,9 +35,9 @@ li {
     font-weight: 700;
     border-radius: 5px;
     font-family: 'Sevillana', cursive;
-    padding: 5px;
+    /* padding: 5px; */
     margin-left: 5rem;
-    background-color: #ffc8dd;
+    /* background-color: #ffc8dd; */
     align-items: center;
     color: black;
 }
@@ -139,7 +139,7 @@ li {
     justify-content: space-around;
     gap: 10%;
     padding: 50px 50px 10px 50px;
-    height: 80vh;
+    height: 50vh;
     background-color: white;
     margin-bottom: 50px;
 
