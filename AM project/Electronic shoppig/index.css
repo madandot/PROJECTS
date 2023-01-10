@@ -73,7 +73,7 @@ li {
 }
 
 .search {
-    background-color: #fff;
+    background-color: #2f3132;
     padding: 10px;
     border-radius: 5px;
 }
@@ -85,7 +85,9 @@ li {
     font-weight: 700;
     outline: none;
     border: none;
+    color: #fff;
     cursor: context-menu;
+    background-color: #2f3132;
 }
 
 .search i {
