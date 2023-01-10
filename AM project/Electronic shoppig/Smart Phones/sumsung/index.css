@@ -12,188 +12,138 @@ li {
     list-style: none;
 }
 
-.heading {
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-zero {
     text-transform: capitalize;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: larger;
-    padding: 10px;
-    /* position: fixed; */
+    padding: 3rem 0 0 7rem;
+    letter-spacing: 1.2px;
+    font-size: 1.5rem;
 }
 
-.headingone {
-    height: 110vh;
+.header-zero p {
+    opacity: 0.5;
 }
 
-.headingone img {
-    padding: 20px;
+.header-one {
+    text-transform: capitalize;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 3rem 7rem 0 0;
 }
 
-.brands h1 {
-    text-align: center;
-    text-transform: uppercase;
-    font-family: sans-serif;
-    letter-spacing: 2px;
+.header-one {
+    font-size: 1.58rem;
+    cursor: pointer;
+}
+
+.header-one ul li {
+    background-color: silver;
+    border-radius: 5px;
+    padding: 0 10px 20px 10px;
+}
+
+.header-one i {
     font-size: 2rem;
-    padding: 20px;
-    height: 20vh;
+    padding-top: 20px;
     cursor: pointer;
 }
 
-.card {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 5rem;
+.header-two {
+    display: none;
 }
 
-.card-one img {
-    border-radius: 5px;
-    align-items: center;
-    background-color: rgb(136, 126, 126);
-    box-shadow: 1px 1px 10px 1px rgb(136, 126, 126);
-    cursor: pointer;
+.header-two ul li {
+    padding: 10px;
 }
 
-.card-one a {
+.header-one ul li:hover .header-two {
     display: block;
-    text-align: center;
-    color: #000;
-    text-transform: capitalize;
-    font-size: 20px;
-    font-weight: 700;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    padding: 5px;
+    position: absolute;
     background-color: whitesmoke;
-    border-radius: 3px;
-    margin: 5px;
-}
-
-.card-one a:hover {
-    background-color: tan;
-}
-
-.new {
-    text-transform: capitalize;
-    padding: 20px;
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    height: 10vh;
-}
-
-.newone {
-    height: 100vh;
-}
-
-.newone a {
-    padding: 10px;
-}
-
-.newone img {
-    border-radius: 10px;
-}
-
-.games {
-    text-transform: capitalize;
-    padding: 20px;
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    height: 15vh;
-}
-
-.game {
-    height: 70vh;
-}
-
-.game a {
-    padding: 20px;
-}
-
-.game {
-    padding-left: 5rem;
-}
-
-.game img {
-    border-radius: 5px;
-    width: 400px;
-    height: 400px;
-    padding: 10px;
-    background-color: #000;
-}
-
-.upgrade {
-    height: 50vh;
-}
-
-.upgrade img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.end {
-    height: 50vh;
-}
-
-.end img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.footer {
-    text-align: center;
-}
-
-.footer button {
-    padding: 10px;
-    border-radius: 5px;
-    outline: none;
-    border: none;
-    background-color: orangered;
-    cursor: pointer;
-}
-
-.footers {
-    display: flex;
-    justify-content: space-around;
-    height: 35vh;
-    padding: 20px;
-    background-color: black;
-}
-
-.footersone h1 {
-    text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
     padding: 5px;
-    text-align: center;
-    color: #fff;
+    cursor: pointer;
+    font-size: 19px;
 }
 
-.footersone ul li {
-    text-transform: capitalize;
-    padding: 10px;
-    text-align: center;
+.header-two ul li:hover {
+    background-color: wheat;
+    color: rgb(3, 125, 246);
 }
 
-.footersone a {
-    color: #fff;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.social h1 {
-    color: white;
-    font-size: 20px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    letter-spacing: 2px;
-}
-
-.social {
-    text-align: center;
-    padding: 10px;
-    background-color: black;
-}
-
-.social i {
+.line span {
+    width: 100%;
     padding: 20px;
-    font-size: 3rem;
-    color: rgb(246, 3, 43);
 }
+
+.container {
+    display: flex;
+}
+
+.container-one {
+    padding: 3rem 0 0 2rem;
+}
+
+.container-one h1 {
+    padding: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+}
+
+.container-one button {
+    font-size: 20px;
+    padding: 5px;
+    margin: 10px;
+}
+
+.container-one span {
+    font-size: large;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-one p {
+    text-transform: capitalize;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    padding: 5px 0 5px 10px;
+}
+
+.container-two {
+    display: flex;
+}
+
+.one {
+    padding: 20px;
+}
+
+.one a {
+    background-color: rosybrown;
+    padding: 10px;
+    color: black;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.discount {
+    display: flex;
+}
+
+.discount i {
+    font-weight: bolder;
+}
+
+.off {
+    opacity: 0.9;
+    text-decoration: line-through;
+}
+
+s {}
